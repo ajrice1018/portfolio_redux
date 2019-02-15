@@ -25,7 +25,7 @@ function googlemap_init(dom_obj, address, description, point) {
 			googlemap_init_obj.address = results[0].geometry.location;
 			googlemap_create();
 		} else
-			alert("Geocode was not successful for the following reason: " + status);
+			console.log("Geocode was not successful for the following reason: " + status);
 	});
 	
 	jQuery(window).resize(function() {
